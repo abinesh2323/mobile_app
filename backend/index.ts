@@ -1,7 +1,7 @@
-import app from "./src/app";
-import { connectDB } from "./src/config/database";
+import app from "./src/app.ts";
+import { connectDB } from "./src/config/database.ts";
 import { createServer } from "http";
-import { initializeSocket } from "./src/utils/socket";
+import { initializeSocket } from "./src/utils/socket.ts";
 
 const PORT = process.env.PORT || 3000;
 

@@ -1,6 +1,6 @@
 import type { Response, NextFunction } from "express";
-import type { AuthRequest } from "../middleware/auth";
-import { User } from "../models/User";
+import type { AuthRequest } from "../middleware/auth.ts";
+import { User } from "../models/User.ts";
 
 export async function getUsers(req: AuthRequest, res: Response, next: NextFunction) {
   try {

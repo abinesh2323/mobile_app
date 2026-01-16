@@ -1,7 +1,7 @@
 import type { Response, NextFunction } from "express";
-import type { AuthRequest } from "../middleware/auth";
-import { Message } from "../models/Message";
-import { Chat } from "../models/Chat";
+import type { AuthRequest } from "../middleware/auth.ts";
+import { Message } from "../models/Message.ts";
+import { Chat } from "../models/Chat.ts";
 
 export async function getMessages(req: AuthRequest, res: Response, next: NextFunction) {
   try {
